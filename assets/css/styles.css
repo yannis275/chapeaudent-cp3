@@ -1,0 +1,744 @@
+/* Couleurs principal du site */
+:root {
+  /* Couleurs principales */
+  --couleur-principale: #0b6e8f;
+  --couleur-principale-foncee: #08526b;
+  /* Couleurs secondaires */
+  --couleur-secondaire: #2e9e7b;
+  --couleur-secondaire-foncee: #1f7a5c;
+  /* Couleurs du texte */
+  --couleur-texte: #1a2327;
+  --couleur-texte-secondaire: #4a5760;
+  --couleur-texte-discret: #6b7a83;
+  /* Couleurs des fonds et des bordures */
+  --couleur-bordure: #c6cfd4;
+  --couleur-fond: #f5f8fa;
+  --couleur-blanche: #ffffff;
+  /* Couleurs des messages */
+  --couleur-erreur: #c0392b;
+  --couleur-succes: #1e8e5a;
+  --couleur-texte-succes: #17744a;
+}
+
+/* Style général du site */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-fond);
+}
+/* Liens d'accès direct au contenu */
+.lien-contenu {
+  position: absolute;
+  left: -9999px;
+}
+/* Pour acceder au lien "Aller au contenu principal" en appuyant sur la touche TAB*/
+.lien-contenu:focus {
+  left: 10px;
+  top: 10px;
+  z-index: 1000;
+  padding: 12px 16px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  border-radius: 6px;
+  text-decoration: none;
+}
+/* Titres */
+h1,
+h2,
+h3 {
+  color: var(--couleur-texte);
+}
+/* Paragraphes */
+p {
+  color: var(--couleur-texte-secondaire);
+  line-height: 1.6;
+}
+
+/* Mise en page générale */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+/* En-tête du site */
+header {
+  background-color: var(--couleur-blanche);
+  padding: 20px;
+  border-bottom: 1px solid var(--couleur-bordure);
+}
+/* Nom du site */
+header h1 {
+  color: var(--couleur-principale);
+  margin: 0 0 15px;
+}
+/* Menu de navigation */
+header nav {
+  display: flex;
+  gap: 25px;
+}
+/* Liens du menu */
+header nav a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Survol des liens */
+header nav a:hover {
+  color: var(--couleur-principale);
+}
+
+/* Liens d'actions */
+main a {
+  color: var(--couleur-principale);
+  font-weight: bold;
+}
+/* Survol des liens d'actions */
+main a:hover {
+  color: var(--couleur-principale-foncee);
+}
+
+/* Bouton principal */
+.bouton-principal {
+  display: inline-block;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Survol du bouton */
+main a.bouton-principal:hover {
+  background-color: var(--couleur-principale-foncee);
+  color: var(--couleur-blanche);
+}
+/* Champs de formulaire */
+.champ-formulaire {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+/* Focus des champs */
+.champ-formulaire:focus {
+  outline: 2px solid var(--couleur-principale);
+  outline-offset: 2px;
+}
+/* Etiquettes des champs */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--couleur-texte);
+}
+/* Mise en page de la page d'accueil */
+.page-accueil main {
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  background-color: var(--couleur-blanche);
+  box-sizing: border-box;
+}
+/* Titre principal de l'accueil */
+.titre-accueil {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--couleur-texte);
+  margin-bottom: 20px;
+}
+/* Espacement des champs du formulaire */
+#recherche label {
+  margin-top: 20px;
+}
+/* Espacement entre les champs */
+#recherche .champ-formulaire {
+  margin-bottom: 15px;
+}
+/* Espacement du bouton principal */
+#recherche .bouton-principal {
+  margin-top: 15px;
+}
+/* Texte de présentation de l'accueil */
+#recherche p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+/* Cartes de réassurances */
+.grille-reassurance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* Apparences des cartes de réassurance */
+.grille-reassurance > div {
+  background-color: var(--couleur-fond);
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Titres des cartes de réassurance */
+.grille-reassurance h3 {
+  font-size: 18px;
+  color: var(--couleur-texte);
+  margin: 0;
+}
+/* Titre section A savoir */
+.cartes-reassurance h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--couleur-texte);
+  margin-bottom: 25px;
+}
+/* Présentation des sections d'informations */
+.section-information {
+  margin-top: 40px;
+  padding: 25px;
+  background-color: var(--couleur-fond);
+  border-radius: 8px;
+}
+/* Titres des sections d'informations */
+.section-information h2 {
+  font-size: 24px;
+  color: var(--couleur-texte);
+  margin-bottom: 15px;
+}
+/* Paragraphes des sections d'informations */
+.section-information p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Pied de page */
+.pied-de-page {
+  background-color: var(--couleur-blanche);
+  border-top: 1px solid var(--couleur-bordure);
+  padding: 25px 20px;
+  text-align: center;
+}
+.pied-de-page nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.pied-de-page nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  color: var(--couleur-principale);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.pied-de-page nav a:hover {
+  background-color: var(--couleur-fond);
+  color: var(--couleur-principale-foncee);
+  text-decoration: underline;
+}
+
+/* PAGE COMPOSANTS 
+
+Bandeau de cookies */
+.bandeau-cookies {
+  background-color: var(--couleur-blanche);
+  border: 2px solid var(--couleur-principale);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.bandeau-cookies h4 {
+  color: var(--couleur-texte);
+  font-size: 20px;
+  margin-top: 0;
+}
+.choix-cookies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.choix-cookies button {
+  flex: 1;
+  min-height: 44px;
+  padding: 12px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 6px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#bandeau-cookies + a {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--couleur-principale);
+  font-weight: bold;
+}
+.bandeau-cookies p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+/* Etat vide */
+.etat-vide {
+  padding: 25px;
+  margin: 30px auto;
+  max-width: 800px;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+  background-color: var(--couleur-fond);
+  text-align: center;
+}
+
+/* PAGE RESULTAT 
+
+ Contenu principal de la page resultats*/
+.page-resultat main {
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--couleur-blanche);
+}
+
+/* Rappel de la recherche */
+.rappel-recherche {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  background-color: var(--couleur-fond);
+  border-radius: 8px;
+  border: 1px solid var(--couleur-bordure);
+}
+.rappel-recherche a {
+  text-decoration: none;
+  color: var(--couleur-principale);
+}
+/* Filtres de recherche */
+.filtres-recherche {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Boutons filtres*/
+.filtres-recherche button {
+  padding: 10px 18px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 20px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-principale);
+  cursor: pointer;
+}
+/* Filtre sélectionné */
+.filtres-recherche .filtre-actif {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+}
+/* Survol des filtres */
+.filtres-recherche button:hover {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+}
+/* Titre liste des résultats */
+.liste-resultats h2 {
+  margin-bottom: 25px;
+  color: var(--couleur-texte);
+}
+/* Cartes Cabinets */
+.carte-cabinet {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+  background-color: var(--couleur-fond);
+}
+/* Titres cabinets */
+.carte-cabinet h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--couleur-principale);
+}
+/* Informations Cabinets */
+.carte-cabinet p {
+  margin: 8px 0;
+  color: var(--couleur-texte-secondaire);
+}
+/* Listes créneaux */
+.carte-cabinet ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin-top: 15px;
+  list-style: none;
+}
+.carte-cabinet li a {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 6px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-principale);
+  text-decoration: none;
+}
+.carte-cabinet li a:hover {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+}
+.carte-cabinet li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 6px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-principale);
+  text-decoration: none;
+  cursor: pointer;
+}
+.carte-cabinet li p:hover {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+}
+/* Bouton voir plus de cabinets */
+.liste-resultats > button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 6px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-principale);
+  cursor: not-allowed;
+}
+.liste-resultats p {
+  margin-top: 10px;
+  color: var(--couleur-texte-discret);
+  font-size: 14px;
+}
+
+/* PAGE CABINET 
+
+Contenu principal de la page cabinet */
+.page-cabinet main {
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--couleur-blanche);
+}
+/*Retour aux résultats */
+.retour-resultats {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--couleur-principale);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Emplacement de photographie */
+.photo-cabinet {
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  background-color: var(--couleur-fond);
+  border: 1px dashed var(--couleur-principale);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.presentation-cabinet h2 {
+  margin-bottom: 15px;
+  color: var(--couleur-principale);
+}
+.presentation-cabinet p {
+  margin-bottom: 10px;
+}
+
+.acces-pmr {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: var(--couleur-fond);
+  border-radius: 20px;
+  font-weight: bold;
+}
+.infos-cabinet {
+  display: flex;
+  gap: 30px;
+  margin-top: 25px;
+  align-items: center;
+}
+.infos-cabinet p {
+  flex: 1;
+  margin: 0;
+}
+.infos-cabinet h3 {
+  margin-bottom: 10px;
+  color: var(--couleur-texte);
+}
+.infos-cabinet > div {
+  flex: 1;
+}
+.plan-acces {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  background-color: var(--couleur-fond);
+  border: 1px dashed var(--couleur-principale);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Calendrier du cabinet */
+
+.calendrier {
+  margin-top: 35px;
+  padding: 25px;
+  border: 1px solid var(--couleur-bordure);
+  border-radius: 8px;
+}
+
+.calendrier h3 {
+  margin-bottom: 20px;
+  color: var(--couleur-principale);
+}
+
+.jours-calendrier {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.jours-calendrier span {
+  flex: 1;
+  padding: 12px 5px;
+  background-color: var(--couleur-fond);
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid var(--couleur-bordure);
+  cursor: pointer;
+}
+
+.jours-calendrier .jour-selectionne {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  border-color: var(--couleur-principale);
+  font-weight: bold;
+  cursor: pointer;
+}
+.jours-calendrier span:hover {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  border-color: var(--couleur-principale);
+}
+/* Grille des horaires */
+.grille-horaires {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.grille-horaires button {
+  padding: 12px 18px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 6px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-principale);
+  cursor: pointer;
+}
+
+.grille-horaires button:hover {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+}
+
+.grille-horaires .creneau-actif {
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  font-weight: bold;
+}
+
+.creneaux-cabinet .bouton-principal {
+  display: block;
+  width: 70%;
+  margin: 30px auto 0;
+  padding: 16px;
+  align-items: center;
+  border-radius: 8px;
+}
+.creneaux-cabinet p {
+  line-height: 1.5;
+}
+.creneaux-cabinet .creneau-selectionne {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* PAGE RENDEZ-VOUS */
+
+.page-rendez-vous main {
+  max-width: 800pc;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.recapitulatif-creneau {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: var(--couleur-blanche);
+  color: var(--couleur-texte);
+  border: 1px solid var(--couleur-principale);
+  border-radius: 8px;
+}
+.recapitulatif-creneau h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: var(--couleur-principale);
+}
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.formulaire input:not([type="checkbox"]):not([type="radio"]) {
+  padding: 12px;
+  border: 1px solid var(--couleur-principale);
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 70%;
+}
+
+.formulaire label {
+  font-weight: 600;
+}
+.formulaire input[type="radio"],
+.formulaire input [type="checkbox"] {
+  width: auto;
+}
+.formulaire label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.formulaire input:focus {
+  outline: 2px solid var(--couleur-principale);
+  outline-offset: 2px;
+}
+.page-rendez-vous button[type="submit"] {
+  padding: 12px 20px;
+  background-color: var(--couleur-principale);
+  color: var(--couleur-blanche);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.page-rendez-vous button[type="submit"]:hover {
+  opacity: 0.85;
+}
+.page-rendez-vous .panneau-information {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: var(--couleur-blanche);
+  border: 1px solid var(--couleur-principale);
+  border-radius: 5px;
+  color: var(--couleur-texte);
+}
+.champ-erreur {
+  border: 1px solid var(--couleur-erreur) !important;
+}
+.message-erreur {
+  color: var(--couleur-erreur);
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    padding: 25px 20px;
+    box-sizing: border-box;
+  }
+  header nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .champ-formulaire {
+    width: 100%;
+  }
+  .grille-reassurance {
+    grid-template-columns: 1fr;
+  }
+  .page-resultat main {
+    width: 100%;
+    padding: 20px;
+  }
+  .page-resultat .rappel-recherche {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .page-resultat .carte-cabinet {
+    padding: 15px;
+  }
+  .page-resultat .carte-cabinet ul {
+    gap: 8px;
+  }
+  .page-resultat .carte-cabinet li a {
+    padding: 10px;
+  }
+  .page-cabinet main {
+    width: 100%;
+    padding: 20px;
+  }
+  .infos-cabinet {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .grille-horaires {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .page-cabinet .bouton-principal {
+    width: 75%;
+  }
+  .page-cabinet header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+  .infos-cabinet {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+}
