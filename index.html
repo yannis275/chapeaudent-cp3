@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - ChapeauDent</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="page-accueil">
+    <!-- Avertissement -->
+    <p> Démonstrateur pédagogique ChapeauDent — aucun rendez-vous réel. N’utilisez aucune donnée personnelle ou médicale
+        réelle. </p>
+    <!-- Lien pour acceder au contenu principal de la page -->
+    <a href="#contenu-principal" class="lien-contenu">Aller au contenu principal</a>
+    <header>
+        <!-- Nom du site-->
+        <h1>ChapeauDent</h1>
+        <nav>
+            <!-- Lien vers les différentes pages -->
+            <a href="index.html#recherche">Rechercher</a>
+            <a href="confirmation.html#mes-rendez-vous">Mes rendez-vous</a>
+            <a href="index.html#aide">Aide</a>
+        </nav>
+
+    </header>
+    <main id="contenu-principal">
+        <!-- Présentation et recherche -->
+        <section id="recherche">
+            <h2 class="titre-accueil">Prenez rendez-vous chez le dentiste, simplement.</h2>
+            <p>Découvrez le parcours de réservation dans ce démonstrateur pédagogique. Aucun rendez-vous réel n'est
+                proposé.</p>
+            <!-- Champ de recherche pour la ville/code postal-->
+            <label for="ville">Ville ou code postal</label>
+            <input type="text" id="ville" value="Lyon" class="champ-formulaire">
+            <!-- Champ de recherche pour le motif de la visite -->
+            <label for="motif">Motif de la visite</label>
+            <input type="text" id="motif" value="Contrôle / détartrage" class="champ-formulaire">
+            <p>La recherche est une simulation à scénario fixe. Les valeurs saisies ne modifient pas les résultats.</p>
+            <!-- Bouton de recherche-->
+            <a href="resultats.html" class="bouton-principal">Voir les créneaux de démonstration</a>
+        </section>
+        <!-- Elements de reassurance -->
+        <section class="cartes-reassurance">
+            <h2>A savoir</h2>
+            <div class="grille-reassurance">
+                <div>
+                    <h3>Aperçu de confirmation</h3>
+                </div>
+                <div>
+                    <h3>Préférence de rappel présentée à titre d'exemple</h3>
+                </div>
+                <div>
+                    <h3>Aucune donnée de santé à saisir dans cet exercice</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Section Aide -->
+        <section id="aide" class="section-information">
+            <h2>Aide</h2>
+            <p>Ceci est un démonstrateur pédagogique. Les cabinets et les créneaux présentés sont fictifs. Aucun
+                rendez-vous réel ne peut être pris. </p>
+        </section>
+        <!-- Section Informations -->
+        <section id="informations" class="section-information">
+            <h2>Informations</h2>
+            <p>ChapeauDent est un démonstrateur pédagogique réalisé dans le cadre d'un exercice de formation.</p>
+            <p>Les cabinets, les professionnels et les créneaux présentés sont fictifs. Aucun rendez-vous réel ne peut
+                être pris.</p>
+        </section>
+        <!-- Section Confidentialité -->
+        <section id="confidentialite" class="section-information">
+            <h2>Confidentialité</h2>
+            <p>Les informations saisies dans ce démonstrateur ne sont ni envoyées ni enregistrées par l'application.</p>
+            <p>Le site n'utilise aucun traceur.</p>
+            <p>L'hébergeur peut toutefois effectuer des traitements techniques nécessaires au fonctionnement du site.
+            </p>
+        </section>
+        <!-- Section Accessibilité -->
+        <section id="accessibilite" class="section-information">
+            <h2>Accessibilité</h2>
+            <p>ChapeauDent est conçu pour faciliter la navigation et la lecture. Le site prévoit une navigation au
+                clavier, des repères visuels et des textes lisibles pour rendre son utilisation plus accessible.</p>
+        </section>
+
+    </main>
+    <!-- Pied de page -->
+    <footer class="pied-de-page">
+        <nav>
+            <a href="index.html#informations">Informations</a>
+            <a href="index.html#confidentialite">Politique de confidentialité</a>
+            <a href="index.html#accessibilite">Accessibilité</a>
+            <a href="index.html#aide">Aide</a>
+            <a href="composants.html#bandeau-cookies">Gérer mes cookies</a>
+        </nav>
+        <p>&copy; 2026 ChapeauDent</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title> Vos informations - ChapeauDent</title>
+</head>
+
+<body class="page-rendez-vous">
+    <!-- Avertissement -->
+    <p> Démonstrateur pédagogique ChapeauDent — aucun rendez-vous réel. N’utilisez aucune donnée personnelle ou médicale
+        réelle. </p>
+    <!-- Lien pour acceder au contenu principal de la page -->
+    <a href="#contenu-principal" class="lien-contenu">Aller au contenu principal</a>
+</body>
+<header>
+    <!-- Nom du site-->
+    <h1>ChapeauDent</h1>
+    <nav>
+        <!-- Lien vers les différentes pages -->
+        <a href="index.html#recherche">Rechercher</a>
+        <a href="confirmation.html#mes-rendez-vous">Mes rendez-vous</a>
+        <a href="index.html#aide">Aide</a>
+    </nav>
+</header>
+<main id="contenu-principal">
+    <!-- Etape du parcours -->
+    <p>Etape 3 sur 4 : Vos informations</p>
+    <h1>Vos informations</h1>
+    <div class="recapitulatif-creneau">
+        <h2>Votre créneau</h2>
+        <p>Cabinet du Parc (fictif) · mer. 18 nov. 2026 à 14:30</p>
+    </div>
+    <!-- Formulaire -->
+    <form action="confirmation.html" method="get">
+        <div class="formulaire">
+            <p>Civilité</p>
+            <label>
+                <input type="radio" value="mme">Mme</label>
+            <label>
+                <input type="radio" value="m">M.</label>
+        </div>
+        <div class="formulaire">
+            <label for="nom">Nom *</label>
+            <input type="text" id="nom" placeholder="PatientTest" required>
+        </div>
+        <div class="formulaire">
+            <label for="prenom">Prénom *</label>
+            <input type="text" id="prenom" placeholder="Demo" required>
+        </div>
+        <div class="formulaire">
+            <label for="date-naissance">Date de naissance * (JJ/MM/AAAA)</label>
+            <input type="date" id="date-naissance" placeholder="01/01/1950">
+        </div>
+        <div class="formulaire">
+            <label for="telephone">Téléphone *</label>
+            <input type="tel" id="telephone">
+        </div>
+        <div class="formulaire">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" placeholder="patient.test@example.com" required>
+        </div>
+        <div class="formulaire">
+            <label for="motif">Motif / précisions (facultatif)</label>
+            <input type="text" id="motif" placeholder="Douleur légère">
+        </div>
+        <!-- Préférence de rappel -->
+        <div class="formulaire">
+            <label>
+                <input type="checkbox">J'accepte que mes données soient traitées pour gérer mon rendez-vous *
+                <input type="checkbox">(facultatif) Je souhaite recevoir des rappels par SMS / e-mail
+            </label>
+            <p class="texte-info">Préférence présentée à titre d’exemple. Aucun rappel ne sera envoyé et ce
+                choix n’est pas conservé.
+            </p>
+        </div>
+        <button type="submit">Poursuivre la simulation</button>
+    </form>
+    <div class="panneau-information">
+        <p>Ce formulaire est un exercice d’intégration. Les valeurs saisies ne sont ni transmises ni enregistrées par
+            cette application. N’indiquez aucune information personnelle ou médicale réelle.</p>
+    </div>
+</main>
+<!-- Pied de page -->
+<footer class="pied-de-page">
+    <nav>
+        <a href="index.html#informations">Informations</a>
+        <a href="index.html#confidentialite">Politique de confidentialité</a>
+        <a href="index.html#accessibilite">Accessibilité</a>
+        <a href="index.html#aide">Aide</a>
+        <a href="composants.html#bandeau-cookies">Gérer mes cookies</a>
+    </nav>
+    <p>&copy; 2026 ChapeauDent</p>
+</footer>
+
+</html>

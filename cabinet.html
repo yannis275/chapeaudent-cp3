@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Cabinet du Parc - ChapeauDent</title>
+</head>
+
+<body class="page-cabinet">
+    <!-- Avertissement -->
+    <p> Démonstrateur pédagogique ChapeauDent — aucun rendez-vous réel. N’utilisez aucune donnée personnelle ou médicale
+        réelle. </p>
+    <!-- Lien pour acceder au contenu principal de la page -->
+    <a href="#contenu-principal" class="lien-contenu">Aller au contenu principal</a>
+    <header>
+        <!-- Nom du site-->
+        <h1>ChapeauDent</h1>
+        <nav>
+            <!-- Lien vers les différentes pages -->
+            <a href="index.html#recherche">Rechercher</a>
+            <a href="confirmation.html#mes-rendez-vous">Mes rendez-vous</a>
+            <a href="index.html#aide">Aide</a>
+        </nav>
+    </header>
+    <main id="contenu-principal">
+        <a href="resultats.html" class="retour-resultats">Retour aux résultats</a>
+        <!-- Présentation du cabinet -->
+        <section class="presentation-cabinet">
+            <!-- Emplacement de la photo du cabinet-->
+            <div class="photo-cabinet">Emplacement de photographie — démonstration</div>
+            <h2>Cabinet du Parc (fictif)</h2>
+            <p>12 rue Exemple, 69003 Lyon · 4,7/5</p>
+            <p class="acces-pmr">Accessibile PMR</p>
+            <div class="infos-cabinet">
+                <div>
+                    <h3>Praticiens </h3>
+                    <p>Dr Exemple, Dr Modèle</p>
+                </div>
+                <div>
+                    <h3>Horaires</h3>
+                    <p>Lun-Ven 08h30-19h · Sam 9h-12h</p>
+                </div>
+
+            </div>
+            <!-- Emplacement plan d'accès -->
+            <div class="plan-acces">Emplacement de plan — adresse fictive</div>
+        </section>
+
+        <section class="creneaux-cabinet">
+            <h2>Choisir un créneau</h2>
+            <!-- Calendrier -->
+            <div class="calendrier">
+                <h3>Novembre 2026</h3>
+                <div class="jours-calendrier">
+                    <span>Lun<br>16</span>
+                    <span>Mar<br>17</span>
+                    <span class="jour-selectionne">Mer<br>18</span>
+                    <span>Jeu<br>19</span>
+                    <span>Ven<br>20</span>
+                </div>
+                <div class="grille-horaires">
+                    <button type="button">09:15</button>
+                    <button type="button">10:30</button>
+                    <button class="creneau-actif" type="button">14:30</button>
+                    <button type="button">16:00</button>
+                    <button type="button">17:15</button>
+                    <button type="button">18:00</button>
+                </div>
+                <!-- Bouton Choisir le créneau avec rappel créneau sélectionné -->
+                <a href="rendez-vous.html" class="bouton-principal">Choisir ce créneau</a>
+                <p class="creneau-selectionne">
+                    Créneau sélectionné : mer. 18 nov. à 14:30
+                </p>
+            </div>
+        </section>
+    </main>
+    <!-- Pied de page -->
+    <footer class="pied-de-page">
+        <nav>
+            <a href="index.html#informations">Informations</a>
+            <a href="index.html#confidentialite">Politique de confidentialité</a>
+            <a href="index.html#accessibilite">Accessibilité</a>
+            <a href="index.html#aide">Aide</a>
+            <a href="composants.html#bandeau-cookies">Gérer mes cookies</a>
+        </nav>
+        <p>&copy; 2026 ChapeauDent</p>
+    </footer>
+</body>
+
+</html>

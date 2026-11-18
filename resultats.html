@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Résultat de recherche - ChapeauDent</title>
+</head>
+
+<body class="page-resultat">
+    <!-- Avertissement -->
+    <p> Démonstrateur pédagogique ChapeauDent — aucun rendez-vous réel. N’utilisez aucune donnée personnelle ou médicale
+        réelle. </p>
+    <!-- Lien pour acceder au contenu principal de la page -->
+    <a href="#contenu-principal" class="lien-contenu">Aller au contenu principal</a>
+    <header>
+        <!-- Nom du site-->
+        <h1>ChapeauDent</h1>
+        <nav>
+            <!-- Lien vers les différentes pages -->
+            <a href="index.html#recherche">Rechercher</a>
+            <a href="confirmation.html#mes-rendez-vous">Mes rendez-vous</a>
+            <a href="index.html#aide">Aide</a>
+        </nav>
+    </header>
+    <main id="contenu-principal">
+        <!-- Rappel de la recherche -->
+        <section class="rappel-recherche">
+            <p>Lyon · Contrôle / détartrage</p>
+            <a href="index.html#recherche">Modifier</a>
+        </section>
+        <!-- Filtres de recherche -->
+        <section class="filtres-recherche">
+            <h2>Filtrer les résultats</h2>
+            <button type="button">Distance</button>
+            <button type="button">Type de soin</button>
+            <button type="button">Aujourd'hui</button>
+            <button type="button" class="filtre-actif">Cette semaine</button>
+        </section>
+        <!-- Titre de la liste des résultats -->
+        <section class="liste-resultats">
+            <h2>3 cabinets avec des créneaux cette semaine</h2>
+            <!-- Cabinet du Parc
+                 J'utilise article pour regrouper toutes les informations d'un cabinet dans un seul element -->
+            <article class="carte-cabinet">
+                <h3>Cabinet du Parc (fictif)</h3>
+                <p>12 rue Exemple, 69003 Lyon</p>
+                <p>1,2 km</p>
+                <p>4,7/5 · Accessible PMR</p>
+                <!-- Créneaux disponible -->
+                <ul>
+                    <li><a href="cabinet.html">Auj 14:30</a></li>
+                    <li><a href="cabinet.html">Auj 16:00</a></li>
+                    <li><a href="cabinet.html">Demain 09:15</a></li>
+                </ul>
+            </article>
+            <!-- Centre Dentaire Lumière -->
+            <article class="carte-cabinet">
+                <h3>Centre Dentaire Lumière (fictif)</h3>
+                <p>48 av. Modèle, 69006 Lyon</p>
+                <p>2,4 km</p>
+                <p>4,5/5 · Accessible PMR</p>
+                <!-- Créneaux disponible -->
+                <ul>
+                    <li>
+                        <p>Auj 17:15</p>
+                    </li>
+                    <li>
+                        <p>Demain 10:00</p>
+                    </li>
+                    <li>
+                        <p>jeu. 08:45</p>
+                    </li>
+                </ul>
+            </article>
+            <!-- Cabinet Saint-Jean -->
+            <article class="carte-cabinet">
+                <h3>5 pl. Test, 69005 Lyon (fictif)</h3>
+                <p>48 av. Modèle, 69006 Lyon</p>
+                <p>3,1 km</p>
+                <p>4,8/5 · Accessible PMR</p>
+                <!-- Créneaux disponible -->
+                <ul>
+                    <li>
+                        <p>Demain 11:30</p>
+                    </li>
+                    <li>
+                        <p>jeu. 15:00</p>
+                    </li>
+                    <li>
+                        <p>ven. 09:00</p>
+                    </li>
+                </ul>
+            </article>
+            <!-- Bouton "Voir plus de résultat" - désactivé -->
+            <button type="button" disabled>Voir plus de cabinets</button>
+            <p>Cette fonctionnalité n'est pas disponible dans cette version. Elle pourra être proposée dans une version
+                ultérieure.</p>
+        </section>
+        <!-- Pied de page -->
+        <footer class="pied-de-page">
+            <nav>
+                <a href="index.html#informations">Informations</a>
+                <a href="index.html#confidentialite">Politique de confidentialité</a>
+                <a href="index.html#accessibilite">Accessibilité</a>
+                <a href="index.html#aide">Aide</a>
+                <a href="composants.html#bandeau-cookies">Gérer mes cookies</a>
+            </nav>
+            <p>&copy; 2026 ChapeauDent</p>
+        </footer>
+    </main>
+</body>
+
+</html>
